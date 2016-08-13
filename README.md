@@ -6,20 +6,29 @@ This simple PHP API allows you to convert colors from hex, rgb, rgba and CSS col
 
 ###### Convert a hex color into rgb, rgba, names
 ColorMate::make('#ff0000')->toRgb()
+
 ColorMate::make('#ff0000')->toRgba()
+
 ColorMate::make('#ff0000')->toColorname()
 
 ###### Convert a rgb color into hex, rgba, names
 $red   = 255;
+
 $green = 0;
+
 $blue  = 0;
+
 ColorMate::make([$red, $green, $blue])->toHex()
+
 ColorMate::make([$red, $green, $blue])->toRgba()
+
 ColorMate::make([$red, $green, $blue])->toColorname()
 
 ###### Convert a color name into hex, rgb, rgba
 ColorMate::make('red')->toHex()
+
 ColorMate::make('red')->toRgb()
+
 ColorMate::make('red')->toRgba()
 
 ## Modify colors
